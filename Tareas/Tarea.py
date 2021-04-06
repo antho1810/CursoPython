@@ -31,11 +31,14 @@ def main():
     exponente = "5"
 
     nombre = str(input("Ingrese su nombre: "))
-    edad = str(input("Ingrese su edad: "))
+    edad = int(input("Ingrese su edad: "))
+    while edad <= 5:
+        edad = int(input("NO PUEDEN entrar los niños menores de 5 años"))
     V1 = int(input("Ingrese el primer valor: "))
     V2 = int(input("Ingrese el segundo valor: "))
     id = input("1-suma\n2-resta\n3-multiplicacion\n4-division\n5-exponente\nopcion: ")
     print("Su resultado es: ")
+
 
     if(id == suma):
         print(V1 + V2)
@@ -51,7 +54,8 @@ def main():
         print("Error")
     
     print("Su nombre es: " + nombre)
-    print("Su edad es: "+ edad)
+    print("Su edad es: ")
+    print(edad)
 
     
 main()
