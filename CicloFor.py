@@ -11,7 +11,7 @@ Tambien se puede iterar sobre cadenas
 '''
 
 def main():
-    for i in range(2):
+    for i in range(0,10):
         print(i)
         
     #pass: ingenorar este ciclo
