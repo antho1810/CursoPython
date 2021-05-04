@@ -21,6 +21,12 @@ tipos de argumentos
 - nombrados*
 - indefinidos*
 '''
+def main():
+    num1 = float(input("Ingrese el primer numero:"))
+    num2 = float(input("Ingrese el segundo numero:"))
+    Opciones(2,6, "-")
+main()
+
 def Opciones(num1: float, num2: float, operacion: str):
     resultado = 0
     if (operacion == "+"):
@@ -33,6 +39,7 @@ def Opciones(num1: float, num2: float, operacion: str):
         resultado = num1 / num2
     else:
         imprimir("ERROR: Algo salió mal.")
+        return
         
     imprimir(f"{num1} {operacion} {num2} = {resultado}")
 
@@ -55,8 +62,3 @@ def Resta(num1: float, num2: float):
 def imprimir(mensaje : str):
     print(mensaje)
 
-def main():
-    Opciones(2,6, "-")
-
-
-main()
